@@ -1,0 +1,22 @@
+#i = 1
+#while i<=10:
+ #      print(i)
+ #      i = i + 1
+
+exp = -1
+total = 0
+maxexp = 0
+minexp = 99999
+
+while exp!=0:
+    exp = int(input(" What is your expense (type 0 to stop) "))
+    total = total + exp
+    if exp > maxexp:
+        maxexp = exp
+    if exp < minexp :
+        minexp = exp
+print("your total expense is "+ str(total))   
+print("your maximum expense is  "+ str(maxexp))  
+print("your minimum expense is  "+ str(minexp))  
+
+    
